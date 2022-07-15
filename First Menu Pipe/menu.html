@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Style</title>
+    <link href="styles.css" rel="stylesheet">
+    
+
+</head>
+<body>
+<header>
+    <nav>
+        <div class="div_tittle">
+            <h1 id="div_tittle" class="first_tittle">NIGHTS</h1>
+        </div>
+        <ul class="div_menu">
+            <li><a id="div_menu" href="/"> Inicio</a></li>
+            <li><a id="div_menu" href="/"> Sobre Nosotros</a></li>
+            <li><a id="div_menu" href="/"> Contacto</a></li>
+        </ul>
+        
+
+
+            
+    </nav>
+
+</header>
+
+
+<article class="section" id="paragraphs">
+
+    <section id="first_paragraph" class="">
+        <p id="parafraph_edit" class="parafraph_edit">
+           - 'Round your city, 'round the clock
+             Everybody needs you
+             No, you can't make everybody equal
+             Although you got beaucoup family
+             You don't even got nobody bein' honest with you.
+        </p>
+        
+    </section>
+    <section id="second_paragraph">
+        <p class="parafraph_edit">
+            - Breathe 'til I evaporated
+              My whole body see through
+              Transportation, handmade
+              And I know it better than most people
+              I don't trust 'em anyways
+              You can't break the law with them
+        </p>
+    </section>
+    <section >
+        <p class="parafraph_edit">
+            - Get some gushy, have a calm night
+              Shooters killin' left and right
+              Workin' through your worst night
+              If I get my money right
+              You know I won't need you
+              And I tell you (bitch)
+        </p>
+    </section>
+
+    
+</article>    
+
+
+
+
+<script>
+    
+    let primerTitulo= document.getElementById("div_tittle").innerHTML;          //Obtiene los elementos a traves del ID //
+    console.log("El contenido del primer titulo es :  "+primerTitulo);  
+
+    let paragraphs = document.getElementsByTagName("p");                        // Obtiene los elementos a traves de las targets // 
+    console.log("Numeros de parrafos:" + paragraphs.length)
+    for(let i=0;i<paragraphs.length;i++){
+        console.log("Parrafo numero: " + i);
+        console.log(paragraphs[i].innerHTML)
+    }
+
+    let paragraphsOnClassName = document.getElementsByClassName("parafraph_edit");
+    console.log("La cantidad de elementos que contienen la clase llamada parafraph_edit son: " + paragraphsOnClassName.length)
+   
+    for(let parrafoWithClass of paragraphsOnClassName){                         // Recupera los elementos a travez de las clases con este for//
+         console.log(parrafoWithClass.innerHTML)
+    }
+
+    let titleWithClass= document.querySelectorAll("h1.first_tittle")            // Recupera los elementos que contengan El TARGETS y la classe//
+    for(let tittleWithClass of titleWithClass){                                 
+    console.log(tittleWithClass.innerHTML);
+}
+
+
+    
+</script>
+ </body>
+</html>
