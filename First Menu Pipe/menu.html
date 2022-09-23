@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion Calculadora</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+
+</head>
+<body>
+<header>
+    <nav>
+        <div class="div_tittle">
+            <h1 class="first_tittle">Aplicacion Calculadora</h1>
+        </div>
+        <ul class="div_menu">
+            <li><a id="div_menu" href="/"> Inicio</a></li>
+            <li><a id="div_menu" href="/"> Suma</a></li>
+            <li><a id="div_menu" href="/"> Resta</a></li>
+            <li><a id="div_menu" href="/"> Multiplicacion</a></li>
+            <li><a id="div_menu" href="/"> Division</a></li>
+        </ul>
+    
+    </nav>
+
+</header>
+
+
+<article class="calculator" id="calculator">
+    <div class="container_OperadorA">
+        <div class="container_label"> <label for="">Operador A</label></div>
+        <div class="container_Input"> <input type="number" id="operadorA"></div>
+
+    </div>
+    <div class="container_OperadorB">
+        <div class="container_label"> <label for="">Operador B</label></div>
+        <div class="container_Input"> <input type="number" class="input_class" id="operadorB"></div>
+
+    </div>
+    <button class="botton_enviar" onclick="MandarSaludos()">Enviar</button>
+    <div></div>    
+</article>
+
+
+
+
+
+<script src="app.js"></script>
+ </body>
+</html>
